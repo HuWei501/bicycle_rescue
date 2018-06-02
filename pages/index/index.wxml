@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+    <navigator>首页</navigator>
+    <navigator url="/pages/help/help">帮助</navigator>
+    <navigator url="/pages/person/person">个人</navigator>
+</view>
