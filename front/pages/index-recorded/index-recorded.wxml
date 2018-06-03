@@ -1,0 +1,14 @@
+<!--pages/index-recordoded/index-recorded.wxml-->
+<view class="recorded-container">
+  <view class="recorded-success">
+    <view class="success-bg"></view>
+    <image class="success-icon" src="/image/recorded-success.png"></image>
+    <view class="recorded-text1">记录完成</view>
+    <view class="recorded-text2">恭喜您获得1积分!</view>
+  </view>
+  <view class="recorded-adv">
+    <image src="/image/recorded-advback.png"></image>
+    <view class="adv1">积分兑换</view>
+    <view class="adv2">各种单车骑车卡等你来领</view>
+  </view>
+</view>

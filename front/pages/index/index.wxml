@@ -1,6 +1,26 @@
 <!--index.wxml-->
-<view class="container">
-    <navigator>首页</navigator>
-    <navigator url="/pages/help/help">帮助</navigator>
-    <navigator url="/pages/person/person">个人</navigator>
+<!-- 要改font-family和font-size  -->
+<view class="index-container">
+    <view class="right-bar">
+      <view class="send-btn right-btn">
+        <image src="/image/index-send-btn.png"></image>
+      </view>
+      <view class="download-btn right-btn">
+        <image src="/image/index-download-btn.png"></image>
+      </view>
+    </view>
+    <view class="bottom-bar">
+      <view class="bottom-ovals" style="z-index:10;">
+        <image id="green-ovals" src="/image/index-ovals-icon.png"></image>
+        <view>拍照记录</view>
+      </view>
+      <view class="bottom-pic" style="z-index:1;">
+          <image src="/image/index-curve.png"></image>    
+      </view>   
+      <view class="bottom-nav" style="z-index:99;">
+        <navigator url="/pages/help/help"><image src="/image/index-help-btn.png"></image>帮助</navigator>
+        <navigator style="color:#0fe4a1"><image src="/image/index-record-btn.png"></image>记录</navigator>
+        <navigator url="/pages/person/person"><image src="/image/index-person-btn.png"></image>个人</navigator>
+      </view>
+    </view>
 </view>

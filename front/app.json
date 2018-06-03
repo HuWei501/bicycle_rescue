@@ -1,13 +1,14 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/person/person",
-        "pages/help/help"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "公益单车",
-        "navigationBarTextStyle": "black"
-    }
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/help/help",
+    "pages/index-recording/index-recording",
+    "pages/index-recorded/index-recorded"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  }
 }
