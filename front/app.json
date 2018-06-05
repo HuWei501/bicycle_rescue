@@ -2,12 +2,37 @@
     "pages": [
         "pages/index/index",
         "pages/person/person",
-        "pages/help/help"
+        "pages/help/help",
+        "pages/help/record/record"
     ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "公益单车",
         "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/help/help",
+                "text": "帮助",
+                "iconPath": "./static/img/tabBar/icon_help.png",
+                "selectedIconPath": "./static/img/tabBar/icon_help_active.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "记录",
+                "iconPath": "./static/img/tabBar/icon_record.png",
+                "selectedIconPath": "./static/img/tabBar/icon_record_active.png"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "text": "个人",
+                "iconPath": "./static/img/tabBar/icon_person.png",
+                "selectedIconPath": "./static/img/tabBar/icon_person_active.png"
+            }
+        ],
+        "selectedColor": "#0fe4a1",
+        "color": "#ccc"
     }
 }

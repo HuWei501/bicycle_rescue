@@ -1,0 +1,36 @@
+.before_help, .after_help {
+    padding: 30rpx;
+}
+.img_box {
+    margin-top: 30rpx;
+}
+.item {
+    display: inline-block;
+    vertical-align: top;
+    width: 223.66rpx;
+    height: 223.66rpx;
+    margin-right: 10rpx;
+}
+.addBox {
+    background-color: #f6f6f6;
+    position: relative;
+    margin-right: 0;
+}
+.addBox:after, .addBox:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 4rpx;
+    background-color: #999999;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.addBox:after {
+    transform: translateX(-50%) rotate(90deg);
+}
+.divide {
+    height: 30rpx;
+    background-color: #f6f6f6;
+}

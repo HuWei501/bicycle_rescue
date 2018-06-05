@@ -1,2 +1,50 @@
-<!--pages/help/help.wxml-->
-<text>pages/help/help.wxml</text>
+<view class="help_container">
+    <view class="help_list">
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="1">
+            <image src="/static/img/help/help_1.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">乱停乱放</view>
+                <view class="en">No Bicycle Parking</view>
+            </view>
+        </view>
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="2">
+            <image src="/static/img/help/help_2.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">二维码乱码</view>
+                <view class="en">The statement</view>
+            </view>
+        </view>
+    </view>
+    <view class="help_list">
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="3">
+            <image src="/static/img/help/help_3.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">车子损坏</view>
+                <view class="en">Damage to the</view>
+            </view>
+        </view>
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="4">
+            <image src="/static/img/help/help_4.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">骑回市中心</view>
+                <view class="en">Ride back</view>
+            </view>
+        </view>
+    </view>
+    <view class="help_list">
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="5">
+            <image src="/static/img/help/help_5.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">解救小车</view>
+                <view class="en">Save the car</view>
+            </view>
+        </view>
+        <view class="item" hover-class="item-hover" bindtap="goAddRecord" data-type="6">
+            <image src="/static/img/help/help_6.png" mode="widthFix"></image>
+            <view class="title_box">
+                <view class="ch">其他问题</view>
+                <view class="en">Other problems</view>
+            </view>
+        </view>
+    </view>
+</view>

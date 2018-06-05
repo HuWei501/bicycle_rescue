@@ -1,0 +1,23 @@
+<view class="help_record">
+    <view class="before_help">
+        <view class="title">帮助之前</view>
+        <view class="img_box">
+            <image class="item" src="/static/img/help/help_4.png" mode="aspectFill"></image>
+            <view class="item addBox"></view>
+        </view>
+    </view>
+    <view class="divide"></view>
+    <view class="after_help">
+        <view class="title">帮助之后</view>
+        <view class="img_box">
+            <image class="item" src="/static/img/help/help_2.png" mode="aspectFill"></image>
+            <image class="item" src="/static/img/help/help_2.png" mode="aspectFill"></image>
+            <view class="item addBox"></view>
+        </view>
+    </view>
+    <view class="divide"></view>
+    <view class="btn_box">
+        <view class="btn-primary" hover-class="btn-hover">确定提交</view>
+        <view class="btn-default" hover-class="btn-hover" bindtap="goback">取消</view>
+    </view>
+</view>
