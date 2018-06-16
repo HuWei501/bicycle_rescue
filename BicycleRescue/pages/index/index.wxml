@@ -1,0 +1,25 @@
+<!-- 字体需要改  -->
+<view class="index-container">
+  <!-- 转发按钮设置 -->
+  <button open-type='openSetting'></button>
+  <!-- 首页地图组件 -->
+  <map id="indexMap" 
+    latitude="{{latitude}}" 
+    longitude="{{longitude}}"
+    scale="{{scale}}"
+    style="height:{{mapHeight}}px"
+    controls="{{controls}}"
+    bindcontroltap="bindControlTap"
+    markers="{{markers}}"
+    />
+  <!-- 底部导航栏 -->
+  <view class="bottom-pic">
+    <image src="/image/index-bottom-bg.png"/>    
+    <!-- 导航栏按钮 -->
+    <view class="bottom-nav">
+      <navigator class="index-nav" url="/pages/help/help"><image src="/image/index-help-btn.png"/><text>{{indexHelp}}</text></navigator>
+      <view class="index-nav" style="color:#0fe4a1"><image src="/image/index-record-btn.png"/><text>{{indexRecord}}</text></view>
+      <navigator class="index-nav" url="/pages/person/person"><image src="/image/index-person-btn.png"/><text>{{indexPerson}}</text></navigator>
+    </view>
+  </view>   
+</view>

@@ -1,0 +1,264 @@
+/* pages/index-recording/index-recording.wxss */
+page {
+   background: #f6f6f6; 
+}
+
+/* 上传图片组件的样式 */
+.recording-picture {
+  margin-top: 28rpx;
+  width: 100%;
+  height: 270rpx;
+  background: #fff;
+}
+
+.recording-pic-path {
+  width: 210rpx;
+  height: 210rpx;
+}
+
+.recording-pic {
+  display: inline-block;
+  margin-top: 30rpx;
+  width: 210rpx;
+  height: 210rpx;
+  margin-left: 25rpx;
+  margin-right: 10rpx;
+}
+
+/* 十字图形及背景的样式 */
+.cross-container {
+  position: fixed;
+  z-index: 9;
+  top: 60rpx;
+  width: 210rpx;
+  height: 210rpx;
+  background-color: #f6f6f6;
+}
+
+.cross-hidden {
+  display: none;
+}
+
+.row-line {
+  height: 0;
+  width: 74rpx;
+  border-top: 1rpx solid #b8b8b8;
+  border-bottom: 1rpx solid #b8b8b8;
+  background: #b8b8b8;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cross-line {
+  height: 36rpx;
+  width: 0;
+  border-left: 1rpx solid #b8b8b8;
+  border-right: 1rpx solid #b8b8b8;
+  margin-left: 36rpx;  
+  background: #b8b8b8; 
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.top-line {
+  margin-top: 68rpx;
+}
+
+.bottom-line {
+  margin-bottom: 68rpx;
+}
+
+
+/* 记录单车存在问题组件的样式 */
+.recording-type {
+  margin-top: 28rpx;
+  width: 100%;
+  height: 410rpx;
+  background: #fff;
+}
+
+/* 问题类型选择框样式 */
+.type-pick {
+  padding-top: 30rpx;
+  width: 100%;
+  height: 88rpx;
+}
+
+.pick-btn {
+  margin: 0 auto;
+  width: 700rpx;
+  height: 88rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #666;
+  border: 1px solid #d1d1d1;
+  border-radius: 15rpx;
+}
+
+.pick-icon {
+  position: fixed;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  right: 76rpx;
+  top: 396rpx;
+  border: 12rpx solid #666;
+  border-top-color: #666;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+/* 输入备注的多行文本框样式 */
+.recording-note {
+  margin: 0 auto; 
+  margin-top: 30rpx;
+  width: 700rpx;
+  height: 170rpx;
+  border: 1px solid #d1d1d1;
+  border-radius: 15rpx; 
+  font-size: 28rpx;
+  color: #666;
+}
+
+.note-content {
+  width: 660rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+}
+
+.textarea-show {
+  width: 660rpx;
+  height: 120rpx;
+}
+
+.textarea-hidden {
+  display: none;
+}
+
+/* 记录用户地址的样式 */
+.recording-addr {
+  width: 700rpx;
+  height: 90rpx;
+  margin-left: 25rpx;
+  font-size: 20rpx;   
+  color: #cccccc;
+}
+
+.addr-icon {
+  float: left;
+  width: 24rpx;
+  height: 90rpx;       /*实际高度为30rpx*/
+}
+
+.addr-icon image {
+  width: 24rpx;
+  height: 30rpx;
+  padding-top: 30rpx;
+}
+
+.addr-text {
+  float: right;
+  height: 90rpx;
+  width: 672rpx;
+  line-height: 90rpx;
+}
+
+/* 问题类型选择页面的样式 */
+.pick-mask-hidden {
+  display: none;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 10; 
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0,0,0.2);
+}   
+
+ .pick-mask-show {
+  display: block;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 99; 
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0,0,0.2);
+}  
+
+.mask-content {
+  margin: 0 auto;
+  margin-top: 66rpx;
+  width: 630rpx;
+  height: 720rpx;
+  background: #fff;
+  border-radius: 26rpx;
+}
+
+.item-container {
+  width: 540rpx;
+  height: 590rpx;
+  margin: 0 auto;
+  padding-top: 50rpx;
+}
+
+.mask-item {
+  width: 540rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  background: #e3e3e3;
+  border-radius: 16rpx;
+}
+
+/* 用户手动输入地址页面的样式 */
+.input-addr-show {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  font-size: 28rpx;
+}
+
+.input-addr-show textarea {
+  width: 660rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  border: 1px solid #d1d1d1;
+  border-radius: 15rpx;
+}
+
+#upload-addr-btn {
+  width: 200rpx;
+  margin-left: 275rpx;
+}
+
+.input-addr-hidden {
+  display: none;
+}
+
+/* 上传按钮的样式 */
+.upload-btn {
+  display: inline-block;
+  margin-top: 28rpx;
+  margin-left: 105rpx;
+  width: 540rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 32rpx;
+  color: #fefefe;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 40rpx;
+  background: linear-gradient(170deg,#04e1cb,#15e68a);
+}

@@ -1,0 +1,24 @@
+<!--pages/index-recordoded/index-recorded.wxml-->
+<view class="recorded-container">
+  <!-- 记录成功界面的图标及文字 -->
+  <view class="recorded-success">  
+    <view class="success-show">  
+      <view class="success-bg">
+        <image class="success-icon" src="/image/recorded-success.png"></image>
+      </view>
+    </view> 
+    <view class="recorded-text1">{{recordedTextOne}}</view>
+    <view class="recorded-text2">{{recordedTextTwo}}</view>
+    <!-- 记录成功界面的两个跳转按钮 -->
+    <view class="recorded-btn-bar">
+      <view class="recorded-btn home-btn" bindtap="goToHome">{{returnHome}}</view>
+      <view class="recorded-btn rank-btn" bindtap="goToPointPannel">{{checkPoint}}</view>
+    </view>
+  </view>
+  <!-- 记录成功界面的广告栏 -->
+  <view class="recorded-adv">
+    <image src="/image/recorded-advback.png"></image>
+      <view class="adv1">{{advOne}}</view>
+      <view class="adv2">{{advTwo}}</view>
+  </view>
+</view>

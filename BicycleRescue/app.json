@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/help/help",
+    "pages/index-recording/index-recording",
+    "pages/index-recorded/index-recorded",
+    "pages/authorize/authorize"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "light"
+  }
+}

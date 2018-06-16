@@ -1,0 +1,7 @@
+<!--pages/authorize/authorize.wxml-->
+<view class="authorize-container">
+  <button class="get-authorize" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录
+  </button>
+    <button class="get-authorize" bindtap="refuseInfo">取消
+  </button>
+</view>

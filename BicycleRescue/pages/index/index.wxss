@@ -1,0 +1,55 @@
+/*字体及字体大小需修改*/
+
+/* Map组件样式 */
+#indexMap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 130rpx;
+  width: 100%;
+}
+
+/* 底部导航栏样式 */
+.bottom-pic{
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 130rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bottom-pic image {
+  width: 100%;
+  height: 130rpx;
+}
+
+/* 底部导航栏按钮样式 */
+.bottom-nav {
+  position: fixed; 
+  z-index: 99;
+  width: 100%;
+  height: 76rpx;
+  bottom: 12rpx; 
+  left: 0;
+  right: 0;
+}
+
+/* 要改font-family和font-size */
+.bottom-nav .index-nav{
+  float: left;
+  margin-left: 100rpx;
+  margin-right: 99rpx;
+  width: 52rpx;
+  height: 76rpx;
+  color: #999;
+  font-size: 20rpx;
+  text-align: center; 
+}
+
+.bottom-nav image {
+  width: 42rpx;
+  height: 48rpx;
+}

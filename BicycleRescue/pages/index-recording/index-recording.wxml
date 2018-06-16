@@ -1,0 +1,52 @@
+<!--pages/index-recording/index-recording.wxml-->
+<view class="recording-container"> 
+  <!-- 上传图片组件 -->
+  <view class="recording-picture">
+    <view wx:for="{{picList}}" wx:key="id" data-index="{{index}}" class="recording-pic" bindlongtap="deletePic" bindtap="previewPic" bindtouchstart="bindtouchstart" bindtouchend="bindtouchend">
+      <image class="recording-pic-path" src='{{item}}'/>   
+    </view>
+  <!-- 十字图形及背景 -->
+    <view bindtap="uploadPic" class="{{crossShow ? 'cross-container' : 'cross-hidden'}}" style="left:{{crossLeft}}px;">
+      <view class="cross-line top-line"></view>
+      <view class="row-line"></view>
+      <view class="cross-line bottom-line"></view>
+    </view>
+  </view>  
+
+  <!-- 记录共享单车存在问题的组件 --> 
+  <view class="recording-type">
+    <!-- 问题类型选择框 -->
+    <view class="type-pick">
+       <view class="pick-btn" bindtap="onChangeShowState">{{showPickContent}}</view> 
+       <view class="pick-icon"></view>
+    </view>
+    <!-- 多行文本框,用于输入备注 -->
+    <view class="recording-note">
+      <view class="note-content"><textarea show-confirm-bar="" class="{{showTextarea ? 'textarea-show' : 'textarea-hidden'}}"value="备注：" bindtap="bindInputTap" focus="{{focus}}" maxlength="100" bindinput="recordingContent"></textarea></view>
+    </view>
+    <!-- 用户地址 -->
+    <view class="recording-addr">
+      <view class="addr-icon"><image src="/image/recording-addr-icon.png"></image></view>
+      <view class="addr-text" bindtap="getAddr">{{showAddr}}</view> 
+    </view>
+  </view>
+
+  <!-- 点击问题类型选择框,弹出选择页面 -->
+  <view class="{{showMask ? 'pick-mask-hidden' : 'pick-mask-show'}}">
+    <view class="mask-content">
+      <view class="item-container">
+        <view wx:for="{{maskList}}" wx:key="id" bindtap="chooseType" id="maskItem" class="mask-item" data-message="{{item.message}}">{{item.message}}</view>
+      </view>
+    </view>
+  </view>
+
+    <!-- 系统获取位置失败时，弹出输入地址页面 -->
+  <view class="{{showAddrInput ? 'input-addr-show' : 'input-addr-hidden'}}">
+    <textarea show-confirm-bar="" bindtap="bindInputAddr" focus="{{focusAddr}}" maxlength="20" bindinput="bindAddrContent">
+    </textarea>
+    <view id="upload-addr-btn" class="upload-btn" bindtap="uploadAddr">{{uploadAddrText}}</view>
+  </view>
+
+  <!-- 确认上传按钮 -->
+  <view class="upload-btn" bindtap="uploadMessage">{{uploadText}}</view>
+</view>
